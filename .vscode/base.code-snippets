@@ -1,0 +1,47 @@
+{
+	// Place your Financial-Compass-App workspace snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and 
+	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope 
+	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is 
+	// used to trigger the snippet and the body will be expanded and inserted. Possible variables are: 
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. 
+	// Placeholders with the same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"scope": "javascript,typescript",
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+	//
+	// You can also restrict snippets to specific files using include/exclude patterns:
+	// "Test snippet": {
+	// 	"scope": "javascript,typescript",
+	// 	"prefix": "test",
+	// 	"body": "test('$1', () => {\n\t$0\n});",
+	// 	"include": ["**/*.test.ts", "*.spec.ts"],
+	// 	"exclude": ["**/temp/*.ts"],
+	// 	"description": "Insert test block"
+	// }
+	"JsonText": {
+		"scope": "json",
+		"prefix": [
+			"b",
+			"и"
+		],
+		"body": [
+			",\n{",
+			"\t\"text\": \"$1\",",
+			"\t\"answers\": [",
+			"\t\t\"Да\",",
+			"\t\t\"Нет\"",
+			"\t],",
+			"\t\"correctIndex\": 1,",
+			"\t\"correctComment\": \"$2\",",
+			"\t\"wrongComment\": \"$3\"",
+			"\t}",
+		]
+	}
+}
