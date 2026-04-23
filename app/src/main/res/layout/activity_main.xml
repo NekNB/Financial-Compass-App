@@ -1,49 +1,76 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
-    android:padding="16dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/white"
+    android:padding="16dp">
 
-    <!-- Вопрос -->
-    <TextView
-        android:id="@+id/questionText"
-        android:textSize="20sp"
-        android:textStyle="bold"
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="24dp"/>
+        android:layout_height="match_parent">
 
-    <!-- Контейнер для ответов (сюда создаются кнопки в коде) -->
-    <LinearLayout
-        android:id="@+id/answersContainer"
-        android:orientation="vertical"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"/>
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_marginTop="76dp"
+            android:text="@string/app_name"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:typeface="normal"
+            app:autoSizeMaxTextSize="28sp"
+            app:autoSizeMinTextSize="12sp"
+            app:autoSizeStepGranularity="2sp"
+            app:autoSizeTextType="uniform"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    <!-- Комментарий -->
-    <TextView
-        android:id="@+id/explanationText"
-        android:textSize="16sp"
-        android:visibility="gone"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"/>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="240dp"
+            android:layout_height="194dp"
+            android:layout_marginTop="132dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.5">
 
-    <!-- Кнопка "Далее" -->
-    <Button
-        android:id="@+id/nextButton"
-        android:text="Далее"
-        android:visibility="gone"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+            <Button
+                android:id="@+id/quizButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/blue"
+                android:padding="12dp"
+                android:text="@string/quiz_button"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toTopOf="@+id/quizStatisticsButton"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/restartButton"
-        android:text="Пройти заново"
-        android:visibility="gone"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+            <Button
+                android:id="@+id/quizStatisticsButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/blue"
+                android:padding="12dp"
+                android:text="@string/quiz_statistics_button"
+                android:textAlignment="center"
+                android:textColor="@color/text"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/quizButton" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </LinearLayout>

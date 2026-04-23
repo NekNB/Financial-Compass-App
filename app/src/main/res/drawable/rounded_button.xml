@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <!-- Закругление углов -->
+    <corners android:radius="20dp" />  <!-- ← одинаковый радиус для всех углов -->
+
+    <!-- Или разное закругление для каждого угла -->
+    <!--
+    <corners
+        android:topLeftRadius="30dp"
+        android:topRightRadius="30dp"
+        android:bottomLeftRadius="10dp"
+        android:bottomRightRadius="10dp" />
+    -->
+
+    <!-- Цвет фона -->
+    <solid android:color="@color/blue" />
+
+
+
+    <!-- Отступы (опционально) -->
+    <padding
+        android:left="16dp"
+        android:top="8dp"
+        android:right="16dp"
+        android:bottom="8dp" />
+
+</shape>

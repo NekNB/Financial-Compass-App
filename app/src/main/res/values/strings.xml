@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Финансовый Компас</string>
+    <string name="title_activity_quiz">QuizActivity</string>
+    <string name="title_activity_quiz_statistics">QuizStatisticsActivity</string>
+    <string name="quiz_finish_message">Спасибо за игру! Даже если в каких-то вопросах ты ошибся - это нормально, так бывает, когда осваиваешь новое. Мы очень рады, что ты прошел тест до конца и закрепил материал. Можешь не удалять игру, а вернуться к ней в любой момент, освежить знания или просто проверить себя</string>
+    <string name="quiz_button">Тест на знание финансовой грамотности</string>
+    <string name="quiz_statistics_button">Моя статистика</string>
+    <string name="quiz_success_rate">Успешность: %d%%</string>
+
+
 </resources>
