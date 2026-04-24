@@ -11,17 +11,17 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
         <activity
-            android:name=".QuizStatistics"
+            android:name="ru.financecompas.app.QuizStatistics"
             android:exported="false"
             android:label="@string/title_activity_quiz_statistics"
             android:theme="@style/Theme.MyApplication" />
         <activity
-            android:name=".QuizActivity"
+            android:name="ru.financecompas.app.QuizActivity"
             android:exported="false"
             android:label="@string/title_activity_quiz"
             android:theme="@style/Theme.MyApplication" />
         <activity
-            android:name=".MainActivity"
+            android:name="ru.financecompas.app.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

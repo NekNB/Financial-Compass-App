@@ -1,4 +1,4 @@
-package com.example.myapplication.model;
+package ru.financecompas.app.model;
 import java.util.List;
 
 public class Question {

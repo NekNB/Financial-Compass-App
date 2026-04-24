@@ -1,4 +1,4 @@
-package com.example.myapplication;
+package ru.financecompas.app;
 
 import android.graphics.Color;
 import android.os.Bundle;
@@ -6,8 +6,6 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.myapplication.database.DatabaseClient;
-import com.example.myapplication.model.QuizResult;
 import com.github.mikephil.charting.charts.LineChart;
 import com.github.mikephil.charting.components.XAxis;
 import com.github.mikephil.charting.components.YAxis;
@@ -20,6 +18,9 @@ import com.github.mikephil.charting.formatter.ValueFormatter;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+
+import ru.financecompas.app.database.DatabaseClient;
+import ru.financecompas.app.model.QuizResult;
 
 public class QuizStatistics extends AppCompatActivity {
 

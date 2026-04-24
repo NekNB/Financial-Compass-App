@@ -1,12 +1,12 @@
-package com.example.myapplication.database;
+package ru.financecompas.app.database;
 
 import androidx.room.Dao;
 import androidx.room.Insert;
 import androidx.room.Query;
 
-import com.example.myapplication.model.QuizResult;
-
 import java.util.List;
+
+import ru.financecompas.app.model.QuizResult;
 
 @Dao
 public interface QuizResultDAO {

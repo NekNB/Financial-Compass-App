@@ -1,4 +1,4 @@
-package com.example.myapplication;
+package ru.financecompas.app;
 
 
 
@@ -6,19 +6,11 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.room.Room;
-
-import com.example.myapplication.database.AppDatabase;
-import com.example.myapplication.database.DatabaseClient;
-import com.example.myapplication.database.QuizResultDAO;
-import com.example.myapplication.model.Question;
-import com.example.myapplication.model.QuizResult;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
@@ -27,8 +19,11 @@ import java.io.InputStream;
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
+
+import ru.financecompas.app.database.AppDatabase;
+import ru.financecompas.app.database.DatabaseClient;
+import ru.financecompas.app.model.Question;
+import ru.financecompas.app.model.QuizResult;
 
 public class QuizActivity extends AppCompatActivity {
 

@@ -1,4 +1,4 @@
-package com.example.myapplication.database;
+package ru.financecompas.app.database;
 
 import android.content.Context;
 
