@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="btnInfo" type="id" />
+    <item name="tvDate" type="id" />
+    <item name="tvBalance" type="id" />
+    <item name="tvEvent" type="id" />
+    <item name="buttonsContainer" type="id" />
+    <item name="btnNext" type="id" />
+    <item name="tvComment" type="id" />
+</resources>

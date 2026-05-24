@@ -1,4 +1,4 @@
-package ru.financecompas.app.model;
+package ru.financecompas.app.activities.quiz.model;
 
 
 import androidx.room.Entity;

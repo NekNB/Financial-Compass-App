@@ -1,4 +1,4 @@
-package ru.financecompas.app.database;
+package ru.financecompas.app.activities.quiz.database;
 
 import androidx.room.Dao;
 import androidx.room.Insert;
@@ -6,7 +6,7 @@ import androidx.room.Query;
 
 import java.util.List;
 
-import ru.financecompas.app.model.QuizResult;
+import ru.financecompas.app.activities.quiz.model.QuizResult;
 
 @Dao
 public interface QuizResultDAO {

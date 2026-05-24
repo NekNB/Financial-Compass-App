@@ -11,21 +11,25 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
         <activity
-            android:name="ru.financecompas.app.QuizStatistics"
+            android:name="ru.financecompas.app.activities.statistics.QuizStatistics"
             android:exported="false"
             android:label="@string/title_activity_quiz_statistics"
             android:theme="@style/Theme.MyApplication" />
         <activity
-            android:name="ru.financecompas.app.QuizActivity"
+            android:name="ru.financecompas.app.activities.quiz.QuizActivity"
             android:exported="false"
             android:label="@string/title_activity_quiz"
             android:theme="@style/Theme.MyApplication" />
+        <activity android:name="ru.financecompas.app.activities.reallife.RealLife"
+            android:exported="false"
+            android:label="@string/title_activity_real_life"
+            android:theme="@style/Theme.MyApplication" />
+
         <activity
             android:name="ru.financecompas.app.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

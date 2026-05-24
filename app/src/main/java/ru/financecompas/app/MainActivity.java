@@ -6,7 +6,9 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-
+import ru.financecompas.app.activities.quiz.QuizActivity;
+import ru.financecompas.app.activities.statistics.QuizStatistics;
+import ru.financecompas.app.activities.reallife.RealLife;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -19,6 +21,13 @@ public class MainActivity extends AppCompatActivity {
         Button quizButton = findViewById(R.id.quizButton);
         quizButton.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, QuizActivity.class);
+            startActivity(intent);
+        });
+
+
+        Button realLifeButton = findViewById(R.id.realLIfeButton);
+        realLifeButton.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, RealLife.class);
             startActivity(intent);
         });
 

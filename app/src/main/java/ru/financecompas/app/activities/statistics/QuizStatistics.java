@@ -1,4 +1,4 @@
-package ru.financecompas.app;
+package ru.financecompas.app.activities.statistics;
 
 import android.graphics.Color;
 import android.os.Bundle;
@@ -19,8 +19,9 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-import ru.financecompas.app.database.DatabaseClient;
-import ru.financecompas.app.model.QuizResult;
+import ru.financecompas.app.R;
+import ru.financecompas.app.activities.quiz.database.DatabaseClient;
+import ru.financecompas.app.activities.quiz.model.QuizResult;
 
 public class QuizStatistics extends AppCompatActivity {
 

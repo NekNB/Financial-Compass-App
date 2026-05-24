@@ -4,4 +4,8 @@
     <color name="white">#FFEFE8DF</color>
     <color name="blue">#96C0CE</color>
     <color name="text">#0F414A</color>
+
+    <color name="dialog_button_color">#4CAF50</color>
+    <color name="dialog_button_text_color">#FFFFFF</color>
+
 </resources>

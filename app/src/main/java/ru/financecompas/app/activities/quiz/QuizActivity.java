@@ -1,4 +1,4 @@
-package ru.financecompas.app;
+package ru.financecompas.app.activities.quiz;
 
 
 
@@ -20,10 +20,12 @@ import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.List;
 
-import ru.financecompas.app.database.AppDatabase;
-import ru.financecompas.app.database.DatabaseClient;
-import ru.financecompas.app.model.Question;
-import ru.financecompas.app.model.QuizResult;
+import ru.financecompas.app.MainActivity;
+import ru.financecompas.app.R;
+import ru.financecompas.app.activities.quiz.database.AppDatabase;
+import ru.financecompas.app.activities.quiz.database.DatabaseClient;
+import ru.financecompas.app.activities.quiz.model.Question;
+import ru.financecompas.app.activities.quiz.model.QuizResult;
 
 public class QuizActivity extends AppCompatActivity {
 
@@ -182,7 +184,8 @@ public class QuizActivity extends AppCompatActivity {
 
         try {
             InputStream is = getAssets().open("questions.json");
-            byte[] buffer = new byte[is.available()];
+            int size = is.available();
+            byte[] buffer = new byte[size];
             is.read(buffer);
             is.close();
 

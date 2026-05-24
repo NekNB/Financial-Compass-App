@@ -1,4 +1,4 @@
-package ru.financecompas.app.database;
+package ru.financecompas.app.activities.quiz.database;
 
 import android.content.Context;
 
