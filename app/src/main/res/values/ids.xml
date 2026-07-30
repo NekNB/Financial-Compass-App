@@ -7,4 +7,7 @@
     <item name="buttonsContainer" type="id" />
     <item name="btnNext" type="id" />
     <item name="tvComment" type="id" />
+    <item name="thirdGameButton" type="id" />
+    <item name="rightButton" type="id" />
+    <item name="lieButton" type="id" />
 </resources>

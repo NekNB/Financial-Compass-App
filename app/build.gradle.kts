@@ -14,9 +14,10 @@ android {
     defaultConfig {
         applicationId = "ru.financecompas.app"
         minSdk = 24
+        //noinspection OldTargetApi
         targetSdk = 36
-        versionCode = 2
-        versionName = "1.2"
+        versionCode = 3
+        versionName = "1.3"
 
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"

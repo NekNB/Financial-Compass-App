@@ -6,9 +6,11 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import ru.financecompas.app.activities.fourthGame.FourthGame;
 import ru.financecompas.app.activities.quiz.QuizActivity;
-import ru.financecompas.app.activities.statistics.QuizStatistics;
+
 import ru.financecompas.app.activities.reallife.RealLife;
+import ru.financecompas.app.activities.thirdGame.ThirdGame;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -31,9 +33,17 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
         });
 
-        Button quizStatisticsButton = findViewById(R.id.quizStatisticsButton);
-        quizStatisticsButton.setOnClickListener(v -> {
-            Intent intent = new Intent(MainActivity.this, QuizStatistics.class);
+
+        Button thirdGameButton = findViewById(R.id.thirdGameButton);
+        thirdGameButton.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, ThirdGame.class);
+            startActivity(intent);
+        });
+
+
+        Button fourthGameButton = findViewById(R.id.stepToFutureButton);
+        fourthGameButton.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, FourthGame.class);
             startActivity(intent);
         });
 
